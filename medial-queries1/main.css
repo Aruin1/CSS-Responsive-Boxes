@@ -1,3 +1,35 @@
 body {
   background: blanchedalmond;
 }
+
+*{
+  outline: 1px solid red
+}
+
+.container{
+  display: flex; 
+  flex-direction: column;
+  height: 55em;
+}
+
+.a,.c{
+ height: 15%;
+}
+
+.b{
+  height:70%;
+}
+
+@media screen and (max-width: 650px) {
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    width:100%;
+  }
+  .b,.c{
+    height:85%;
+    width: 50%;
+  }
+}
